@@ -236,7 +236,7 @@ function PXFriendsAddon:UpdateUI()
         text = text .. newLine .. PXFriendsAddon:RGBToHex(friend.Color) .. friend.Name .. '|r' .. ' (' .. friend.CharacterName .. ' ~ ' .. friend.Zone .. ', CP: ' .. friend.CP .. ', ' .. friend.Alliance .. ')'
         newLine = '\n'
       else
-        if (self.savedVariables.showIfOffline == true and friend.SecsSinceLogoff ~= nil and friend.secsSinceLogoff > 0) then
+        if (self.savedVariables.showIfOffline == true and friend.SecsSinceLogoff ~= nil and friend.SecsSinceLogoff > 0) then
           text = text .. newLine .. self.ColorGray .. friend.Name .. '|r -- ' .. self:SecondsToClock(friend.SecsSinceLogoff)
           newLine = '\n'
         end

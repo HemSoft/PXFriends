@@ -76,6 +76,25 @@ function PXFriendsAddon:CreateSettingsWindow()
       }
     },
 
+    --------------------
+    -- Notify Options --
+    --------------------
+    {
+      type = "submenu",
+      name = "Toggle nofity options:",
+      controls =
+      {
+        {
+          type    = "checkbox",
+          name    = "Show friends when offline:",
+          tooltip = "Whether or not to display a friend even if she/he are offline.",
+          getFunc = function() return self.savedVariables.showIfOffline end,
+          setFunc = function(e) self.savedVariables.showIfOffline = e; PXFriendsAddon:UpdateUI() end,
+          default = true,
+        },
+      },
+    },
+
     --------------
     -- Friend 1 --
     --------------
@@ -574,25 +593,6 @@ function PXFriendsAddon:CreateSettingsWindow()
           width   = "full",
         },
       }
-    },
-
-    --------------------
-    -- Notify Options --
-    --------------------
-    {
-      type = "submenu",
-      name = "Toggle nofity options:",
-      controls =
-      {
-        {
-          type    = "checkbox",
-          name    = "Show friends when offline:",
-          tooltip = "Whether or not to display a friend even if she/he are offline.",
-          getFunc = function() return self.savedVariables.showIfOffline end,
-          setFunc = function(e) self.savedVariables.showIfOffline = e; PXFriendsAddon:UpdateUI() end,
-          default = true,
-        },
-      },
     },
   }
 
