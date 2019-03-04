@@ -1,2 +1,5 @@
-V1.0.0
+V1.0.1 -- 2019/03/03
+- Moved Notify options above all the friends, and small bug fix to seconds since logoff.
+
+V1.0.0 -- 2019/03/01
 - First version.

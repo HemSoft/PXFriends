@@ -1,6 +1,6 @@
 PXFriendsAddon = {
   Name = "PXFriends",
-  Version = "1.0.0",
+  Version = "1.0.1",
 
   ColorGold   = '|cd8b620',
   ColorGray   = '|c6c7687',
