@@ -1,7 +1,7 @@
 ## Title: PhaeroX Friends
 ## APIVersion: 100026
 ## Description: Show online status of your friends.
-## Version: 1.0.0
+## Version: 1.0.3
 ## Author: |c33BBCCPhaeroX|r
 ## OptionalDependsOn: LibStub LibAddonMenu-2.0
 ## SavedVariables: PXFriendsSavedVariables

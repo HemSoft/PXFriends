@@ -1,3 +1,6 @@
+V1.0.2 -- 2019/03/03
+- Bug fix on capitalization of Alliance causing issues when loading saved variables.
+
 V1.0.1 -- 2019/03/03
 - Moved Notify options above all the friends, and small bug fix to seconds since logoff.
 

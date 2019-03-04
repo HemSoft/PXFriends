@@ -1,6 +1,6 @@
 PXFriendsAddon = {
   Name = "PXFriends",
-  Version = "1.0.1",
+  Version = "1.0.3",
 
   ColorGold   = '|cd8b620',
   ColorGray   = '|c6c7687',
@@ -99,7 +99,7 @@ function PXFriendsAddon:GetFriendStatus()
         elseif (alliance == ALLIANCE_DAGGERFALL_COVENANT) then
           friend.Alliance = 'DC'
         elseif (alliance == ALLIANCE_EBONHEART_PACT) then
-          friend.alliance = 'EP'
+          friend.Alliance = 'EP'
         end
       end
     end
@@ -233,7 +233,37 @@ function PXFriendsAddon:UpdateUI()
     local friend = self.savedVariables.friends[x]
     if (friend.Name ~= nil and friend.Name ~= '@name') then
       if (friend.Status == "Online") then
-        text = text .. newLine .. PXFriendsAddon:RGBToHex(friend.Color) .. friend.Name .. '|r' .. ' (' .. friend.CharacterName .. ' ~ ' .. friend.Zone .. ', CP: ' .. friend.CP .. ', ' .. friend.Alliance .. ')'
+        local color = self.ColorWhite
+        local name = friend.Name
+        local cname = ''
+        local zone = ''
+        local cp = 0
+        local level = 0
+        local alliance = ''
+        if (friend.Color ~= nil) then
+          color = PXFriendsAddon:RGBToHex(friend.Color)
+        end
+        if (friend.CharacterName ~= nil and friend.CharacterName ~= '') then
+          cname = friend.CharacterName
+        end
+        if (friend.Zone ~= nil and friend.Zone ~= '') then
+          zone = friend.Zone
+        end
+        if (friend.CP ~= nil and friend.CP ~= '') then
+          cp = friend.CP
+        end
+        if (friend.Level ~= nil and friend.Level ~= '') then
+          level = friend.Level
+        end
+        if (friend.Alliance ~= nil and friend.Alliance ~= '') then
+          alliance = friend.Alliance
+        end
+
+        if (cp == 0 and level > 0) then
+          text = text .. newLine .. color .. name .. '|r' .. ' (' .. cname .. ' ~ ' .. zone .. ', Level: ' .. level .. ', ' .. alliance .. ')'
+        else
+          text = text .. newLine .. color .. name .. '|r' .. ' (' .. cname .. ' ~ ' .. zone .. ', CP: ' .. cp .. ', ' .. alliance .. ')'
+        end
         newLine = '\n'
       else
         if (self.savedVariables.showIfOffline == true and friend.SecsSinceLogoff ~= nil and friend.SecsSinceLogoff > 0) then
