@@ -1,14 +1,17 @@
 PXFriendsAddon = {
   Name = "PXFriends",
-  Version = "1.0.3",
+  Version = "1.0.4",
 
   ColorGold   = '|cd8b620',
+  ColorSilver = '|cd0d3d8',
+  ColorPurple = '|c823d78',
   ColorGray   = '|c6c7687',
   ColorGreen  = '|c28b712',
   ColorOrange = '|cf7952c',
   ColorRed    = '|cd61b1b',
   ColorWhite  = '|cffffff',
   ColorBlue   = '|c2d64bc',
+  ColorMOL    = '|c0303a3',
 
   DefaultSettings = {
     left = 5,
@@ -247,7 +250,19 @@ function PXFriendsAddon:UpdateUI()
           cname = friend.CharacterName
         end
         if (friend.Zone ~= nil and friend.Zone ~= '') then
-          zone = friend.Zone
+          if (friend.Zone == 'Asylym Sanctorium') then
+            zone = self.ColorSilver .. friend.Zone .. '|r'
+          elseif (friend.Zone == 'Cloudrest') then
+            zone = self.ColorPurple .. friend.Zone .. '|r'
+          elseif (friend.Zone == 'Cyrodiil') then
+            zone = self.ColorBlue .. friend.Zone .. '|r'
+          elseif (friend.Zone == 'Halls of Fabrication') then
+            zone = self.ColorGold .. friend.Zone .. '|r'
+          elseif (friend.Zone == 'Maw of Lorkhaj') then
+            zone = self.ColorMOL .. friend.Zone .. '|r'
+          else
+            zone = friend.Zone
+          end
         end
         if (friend.CP ~= nil and friend.CP ~= '') then
           cp = friend.CP

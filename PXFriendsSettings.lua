@@ -100,12 +100,12 @@ function PXFriendsAddon:CreateSettingsWindow()
     --------------
     {
       type = "submenu",
-      name = "Friend 1:",
+      name = "Friends:",
       controls =
       {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 1:",
           getFunc = function() return self.savedVariables.friends[1].Name; end,
           setFunc = function(e) self.savedVariables.friends[1].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -117,20 +117,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[1].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 2 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 2:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 2:",
           getFunc = function() return self.savedVariables.friends[2].Name; end,
           setFunc = function(e) self.savedVariables.friends[2].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -142,20 +131,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[2].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 3 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 3:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 3:",
           getFunc = function() return self.savedVariables.friends[3].Name; end,
           setFunc = function(e) self.savedVariables.friends[3].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -167,20 +145,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[3].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 4 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 4:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 4:",
           getFunc = function() return self.savedVariables.friends[4].Name; end,
           setFunc = function(e) self.savedVariables.friends[4].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -192,20 +159,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[4].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 5 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 5:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 5:",
           getFunc = function() return self.savedVariables.friends[5].Name; end,
           setFunc = function(e) self.savedVariables.friends[5].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -217,20 +173,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[5].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 6 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 6:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 6:",
           getFunc = function() return self.savedVariables.friends[6].Name; end,
           setFunc = function(e) self.savedVariables.friends[6].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -242,20 +187,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[6].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 7 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 7:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 7:",
           getFunc = function() return self.savedVariables.friends[7].Name; end,
           setFunc = function(e) self.savedVariables.friends[7].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -267,20 +201,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[7].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 8 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 8:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 8:",
           getFunc = function() return self.savedVariables.friends[8].Name; end,
           setFunc = function(e) self.savedVariables.friends[8].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -292,20 +215,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[8].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    --------------
-    -- Friend 9 --
-    --------------
-    {
-      type = "submenu",
-      name = "Friend 9:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 9:",
           getFunc = function() return self.savedVariables.friends[9].Name; end,
           setFunc = function(e) self.savedVariables.friends[9].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -317,20 +229,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[9].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 10 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 10:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 10:",
           getFunc = function() return self.savedVariables.friends[10].Name; end,
           setFunc = function(e) self.savedVariables.friends[10].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -342,20 +243,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[10].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 11 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 11:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 11:",
           getFunc = function() return self.savedVariables.friends[11].Name; end,
           setFunc = function(e) self.savedVariables.friends[11].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -367,20 +257,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[11].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 12 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 12:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 12:",
           getFunc = function() return self.savedVariables.friends[12].Name; end,
           setFunc = function(e) self.savedVariables.friends[12].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -392,20 +271,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[12].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 13 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 13:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 13:",
           getFunc = function() return self.savedVariables.friends[13].Name; end,
           setFunc = function(e) self.savedVariables.friends[13].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -417,20 +285,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[13].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 14 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 14:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 14:",
           getFunc = function() return self.savedVariables.friends[14].Name; end,
           setFunc = function(e) self.savedVariables.friends[14].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -442,20 +299,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[14].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 15 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 15:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 15:",
           getFunc = function() return self.savedVariables.friends[15].Name; end,
           setFunc = function(e) self.savedVariables.friends[15].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -467,20 +313,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[15].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 16 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 16:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 16:",
           getFunc = function() return self.savedVariables.friends[16].Name; end,
           setFunc = function(e) self.savedVariables.friends[16].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -492,20 +327,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[16].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 17 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 17:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 17:",
           getFunc = function() return self.savedVariables.friends[17].Name; end,
           setFunc = function(e) self.savedVariables.friends[17].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -517,20 +341,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[17].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 18 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 18:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 18:",
           getFunc = function() return self.savedVariables.friends[18].Name; end,
           setFunc = function(e) self.savedVariables.friends[18].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -542,20 +355,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[18].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 19 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 19:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 19:",
           getFunc = function() return self.savedVariables.friends[19].Name; end,
           setFunc = function(e) self.savedVariables.friends[19].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
@@ -567,20 +369,9 @@ function PXFriendsAddon:CreateSettingsWindow()
           setFunc = function(r,g,b,a) self.savedVariables.friends[19].Color = { ["r"] = r, ["g"] = g, ["b"] = b }; PXFriendsAddon:UpdateUI() end,
           width   = "full",
         },
-      }
-    },
-
-    ---------------
-    -- Friend 20 --
-    ---------------
-    {
-      type = "submenu",
-      name = "Friend 20:",
-      controls =
-      {
         {
           type    = "editbox",
-          name    = "At Name:",
+          name    = "At Name 20:",
           getFunc = function() return self.savedVariables.friends[20].Name; end,
           setFunc = function(e) self.savedVariables.friends[20].Name = e; PXFriendsAddon:UpdateUI() end,
           width   = "full",
